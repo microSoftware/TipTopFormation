@@ -1,0 +1,227 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom    "
+                android:textColor="#3366FF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre prénom ici" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom         "
+                android:textColor="#3366FF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre nom ici" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age         "
+                android:textColor="#3366FF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Age  "
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Vous êtes : "
+            android:textColor="#3366FF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/groupSexe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/homme"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/homme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un homme"
+                android:textColor="#0000FF" />
+
+            <RadioButton
+                android:id="@+id/femme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="une femme"
+                android:textColor="#FF0099" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Quel type de baccalauréat préparez-vous ? "
+            android:textColor="#3366FF"
+            android:textStyle="italic" />
+
+        <RadioGroup
+            android:id="@+id/groupBac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/bacS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bac S"
+                android:textColor="#838F88" />
+
+            <RadioButton
+                android:id="@+id/bacES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bac ES"
+                android:textColor="#838F88" />
+
+            <RadioButton
+                android:id="@+id/bacL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bac L"
+                android:textColor="#838F88" />
+
+            <RadioButton
+                android:id="@+id/bacSTI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bac STI"
+                android:textColor="#838F88" />
+
+            <RadioButton
+                android:id="@+id/bacSTG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bac STG"
+                android:textColor="#838F88" />
+
+            <RadioButton
+                android:id="@+id/bacAutre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autre"
+                android:textColor="#838F88" />
+        </RadioGroup>
+        
+        <EditText 
+            android:id="@+id/editAutre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer le nom de votre diplôme"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Comment avez-vous connu l&apos;IUT de Laval ? "
+            android:textColor="#3366FF"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet / Site web / Forum"
+            android:textColor="#838F88" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amis / Famille / Connaissance"
+            android:textColor="#838F88" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salon d&apos;étudiant"
+            android:textColor="#838F88" />
+
+        <CheckBox
+            android:id="@+id/mega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autre..."
+            android:textColor="#838F88" />
+
+        <Button
+            android:id="@+id/envoyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#00FF00"
+            android:layout_gravity="center_horizontal"
+            android:text="Envoyer" />
+        
+    </LinearLayout>
+
+</ScrollView>
