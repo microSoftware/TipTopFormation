@@ -1,4 +1,4 @@
 TipTopFormation
 ===============
 
-Test d'un commit sur git
+Une super application de formation
